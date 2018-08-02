@@ -27,17 +27,26 @@ var sketch = function(p)
 
 
 
-var myp5 = new p5(sketch);
+var myp5_1 = new p5(sketch);
+var myp5_2 = new p5(sketch);
 
 function resetCanvas()
 {
-    myp5.x = myp5.width/2;
-    myp5.y = myp5.height/2;
+    myp5_1.x = myp5_1.width/2;
+    myp5_1.y = myp5_1.height/2;
 
-    myp5.kirmizi = myp5.random(255);
-    myp5.yesil = myp5.random(255);
-    myp5.mavi = myp5.random(255);
-    myp5.background(30);
+    myp5_1.kirmizi = myp5_1.random(255);
+    myp5_1.yesil = myp5_1.random(255);
+    myp5_1.mavi = myp5_1.random(255);
+    myp5_1.background(30);
+
+    myp5_2.x = myp5_2.width/2;
+    myp5_2.y = myp5_2.height/2;
+
+    myp5_2.kirmizi = myp5_2.random(255);
+    myp5_2.yesil = myp5_2.random(255);
+    myp5_2.mavi = myp5_2.random(255);
+    myp5_2.background(30);
 }
 
 setInterval(resetCanvas,3000);
